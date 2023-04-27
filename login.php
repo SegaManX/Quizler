@@ -16,12 +16,14 @@
     if(!$admin)
     {
       $_SESSION['login_user'] = $myusername;
+      $_SESSION['admin'] = false;
       header("location: index.php");
     }
     else if($admin)
     {
       $_SESSION['login_user'] = $myusername;
-      header("location: admin.php");
+      $_SESSION['admin'] = true;
+      header("location: index.php");
     }
     else
     {
