@@ -42,7 +42,7 @@ $results = mysqli_query($db, "SELECT id FROM quiz WHERE title LIKE '%$query%' OR
       <div class="Quiz" >
         <div class="QuizTop">
           <h2><?php echo $title?></h2>
-          <?php if($_SESSION['admin']){?>
+          <?php if(isset($_SESSION['admin']) && $_SESSION['admin']){?>
           <h2><?php echo 'ID:'.$qID?></h2>
           <?php } ?>
         </div>
