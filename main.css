@@ -11,19 +11,7 @@ body {
 	background-color: #f9f9f9;
 }
 
-.popup {
-	position: fixed;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
-    border-radius: 10px;
-    width: 410px;
-}
-
-  .Header {
+.Header {
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -33,47 +21,45 @@ body {
     border-radius: 10px;
 	background: linear-gradient(to bottom, #333, #000);
   }
-  .Header .Left, .Header .Center, .Header .Right {
+.Header .Left, .Header .Center, .Header .Right {
 	display: inline-block;
-  }
-  .Header h1 {
+}
+.Header h1 {
 	font-size: 36px;
   	font-weight: bold;
 	margin: 0;
 	color: #fff;
-  }
-  .Header .Left img {
+}
+.Header .Left img {
 	  width: 100px;
 	  height: 100px;
 	  margin-right: 10px;
-  }
+}
 
-  .Middle {
+.Middle {
 	color:#222;
 	display: flex;
-	
-  }
-  .Middle .Center{
+}
+.Middle .Center{
 	background-color: #444;
 	padding: 20px;
     border-radius: 10px;
 	min-height: 500px;
-  }
-  .Middle .Right{
+}
+.Middle .Right{
 	color: #000;
 	margin-left: auto; 
 	margin-right: 0;
-
-  }
-  .Middle .Left{
+}
+.Middle .Left{
 	width: 15%
-  }
-  .Middle .Left img{
+}
+.Middle .Left img{
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
-  }
-  .Middle .Center h1, .Middle .Center h2 {
+}
+.Middle .Center h1, .Middle .Center h2 {
     color: #333;
 }
 .Middle .Center table {
@@ -101,8 +87,7 @@ body {
     font-size: 18px;
 }
 
-
-  footer {
+footer {
 	background-color: #333;
 	color: #999;
 	position:relative;
@@ -113,12 +98,12 @@ body {
 	padding-top: 10px;
 	height: 15px;
 	z-index: -1;
-  }
-  footer h3{
+}
+footer h3{
 	padding: 0;
 	padding-left: 10px;
 	margin: 0;
-  }
+}
 
 .Left {
 	display: flex;

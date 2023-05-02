@@ -2,6 +2,12 @@
 session_start();
 include("config.php");
 
+if(isset($_SESSION['admin']) && $_SESSION['admin']){
+}else{
+  header("Location: index.php");
+}
+
+
 if(isset($_POST['username'])) {
   $username = $_POST['username'];
   $result = mysqli_query($db, "SELECT id FROM user WHERE username = '$username'");

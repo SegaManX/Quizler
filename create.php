@@ -1,5 +1,10 @@
 <?php 
     session_start();
+    if(!isset($_SESSION['login_user'])){
+      header("Location: index.php");
+    }
+
+    
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
       $_SESSION['qNum'] = $_POST['qNum'];
@@ -8,7 +13,7 @@
     {
       $_SESSION['qNum'] = 0;
     }
-    $qNum = $_SESSION['qNum'];
+    $qNum = intval($_SESSION['qNum']);
 ?>
 <html>
   <head>

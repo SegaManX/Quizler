@@ -1,5 +1,3 @@
-
-
 <div class="Header">
     <div class="Left">
         <a href="index.php">
